@@ -1,0 +1,48 @@
+.wd-profile-heading {
+    padding: 10px;
+    padding-top: 20px;
+    display: inline-flex;
+    margin: 0px;
+}
+
+.wd-heading-icon {
+    padding: 10px;
+}
+
+.wd-edit-button {
+    color: black;
+}
+
+.wd-profile-content {
+    float: left;
+    padding-left: 30px;
+}
+
+.wd-user-name {
+    padding-bottom: 30px;
+}
+
+.wd-red-link a {
+    color:red;
+    text-decoration: none;
+}
+
+.form-label {
+    font-weight:bold;
+}
+
+.wd-profile-subheading {
+    padding-top: 20px;
+}
+
+.wd-text-form {
+    height: 200px;
+}
+
+.wd-center-text {
+    text-align: center;
+}
+
+.wd-save-btn {
+    color: white;
+}

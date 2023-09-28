@@ -1,0 +1,30 @@
+.wd-course-navigator {
+    width: 200px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+ .wd-course-navigator .list-group-item {
+     border: none;
+     padding: 10px;
+     margin-left: 20px;
+ }
+
+ .wd-course-navigator .list-group-item.active {
+     color: black;
+     background-color: white;
+     border: none;
+     border-left: 2px solid black;
+ }
+
+ .wd-course-navigator a {
+     color: red;
+     text-decoration: none;
+     text-align: left;
+ }
+
+ .wd-course-navigator .list-group-item.active a {
+     color: black;
+ }
