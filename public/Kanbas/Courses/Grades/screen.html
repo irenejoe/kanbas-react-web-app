@@ -1,171 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Kanbas</title>
+    <link href="../../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href="../../KanbasNavigation/index.css" rel="stylesheet" />
+    <link href="../../Courses/CourseNavigation/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
 <body>
-    <table width="100%">
-        <tr>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="#">Northeastern</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Account/AccountNavigation/index.html">Account</a>
-                    </li>
-                    <li>
-                        <a href="../../Dashboard/screen.html">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <a href="#">Studio</a>
-                    </li>
-                    <li>
-                        <a href="#">Commons</a>
-                    </li>
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <ul>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Modules</a>
-                    </li>
-                    <li>
-                        <a href="#">Piazza</a>
-                    </li>
-                    <li>
-                        <a href="#">Zoom</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                    </li>
-                    <li>
-                        <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Panopto</a>
-                    </li>
-                    <li>
-                        <a href="#">Discussions</a>
-                    </li>
-                    <li>
-                        <a href="#">Announcements</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Files</a>
-                    </li>
-                    <li>
-                        <a href="#">Rubrics</a>
-                    </li>
-                    <li>
-                        <a href="#">Outcomes</a>
-                    </li>
-                    <li>
-                        <a href="#">Collaborations</a>
-                    </li>
-                    <li>
-                        <a href="#">Syllabus</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </td>
-            <td valign="top">
-                <select>
-                    <option>Gradebook</option>
-                    <option>Option Two</option>
-                    <option>Option Three</option>
-                </select>
-                <button>Import</button>
-                <select>
-                    <option>Export</option>
-                    <option>Option Two</option>
-                    <option>Option Three</option>
-                </select>
-                <button>Configure</button>
-                <h3>Student Names</h3>
-                <input type="text" placeholder="Search Students"
-                    title="Type the usernames of students you want to filter" />
-                <h3>Assignment Names</h3>
-                <input type="text" placeholder="Search Assignments" />
-                <br>
-                <br>
-                <button>Apply Filters</button>
-                <br />
-                <br />
-                <table width="100%" border="1">
-                    <thead>
-                        <tr>
-                            <th>Student Name</th>
-                            <th>A0 - INTRO OUT OF 100</th>
-                            <th>A1 - HTML OUT OF 100</th>
-                            <th>A2 - CSS OUT OF 100</th>
-                            <th>A3 - JS OUT OF 100</th>
-                            <th>A4 - PHP OUT OF 100</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John Doe</td>
-                            <td><input type="number" max="100" placeholder="100" /></td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td><input type="number" max="100" placeholder="100" /></td>
-                        </tr>
-                        <tr>
-                            <td>Jane Doe</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td><input type="number" max="100" placeholder="100" /></td>
-                        </tr>
-                        <tr>
-                            <td>John Smith</td>
-                            <td>100</td>
-                            <td><input type="number" max="100" placeholder="100" /></td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td><input type="number" max="100" placeholder="100" /></td>
-                        </tr>
-                        <tr>
-                            <td>Jane Smith</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td><input type="number" max="100" placeholder="100" /></td>
-                        </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <div>
+        <ul class="list-group wd-kanbas-navigator">
+            <li class="list-group-item">
+                <i class="fa-solid fa-n fa-3x" style="color: red"></i>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-regular fa-circle-user fa-3x" style="color: #d3d3d3"></i>
+                <a href="/Kanbas/Account/AccountNavigation/index.html">Account</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-gauge fa-2x" style="color: red"></i>
+                <a href="../../Dashboard/screen.html">Dashboard</a>
+            </li>
+            <li class="list-group-item active">
+                <i class="fa-solid fa-book fa-2x" style="color: red"></i>
+                <a href="/Kanbas/Courses/CourseNavigation/index.html">Courses</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-regular fa-calendar-days fa-2x" style="color: red"></i>
+                <a href="#">Calendar</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-envelope-open-text fa-2x" style="color: red"></i>
+                <a href="#">Inbox</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-regular fa-clock fa-2x" style="color: red"></i>
+                <a href="#">History</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-desktop fa-2x" style="color: red"></i>
+                <a href="#">Studio</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-right-from-bracket fa-2x" style="color: red"></i>
+                <a href="#">Commons</a>
+            </li>
+            <li class="list-group-item">
+                <i class="fa-regular fa-circle-question fa-2x" style="color: red"></i>
+                <a href="#">Help</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul class="list-group wd-course-navigator">
+            <li class="list-group-item">
+                <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/Kanbas/Courses/Home/screen.html">Modules</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Piazza</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Zoom</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+            </li>
+            <li class="list-group-item active">
+                <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">People</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Panopto</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Discussions</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Announcements</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Pages</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Files</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Rubrics</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Outcomes</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Collaborations</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Syllabus</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">Settings</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <select>
+            <option>Gradebook</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </select>
+        <button>Import</button>
+        <select>
+            <option>Export</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </select>
+        <button>Configure</button>
+        <h3>Student Names</h3>
+        <input type="text" placeholder="Search Students" title="Type the usernames of students you want to filter" />
+        <h3>Assignment Names</h3>
+        <input type="text" placeholder="Search Assignments" />
+        <br>
+        <br>
+        <button>Apply Filters</button>
+        <br />
+        <br />
+        <table width="100%" border="1">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>A0 - INTRO OUT OF 100</th>
+                    <th>A1 - HTML OUT OF 100</th>
+                    <th>A2 - CSS OUT OF 100</th>
+                    <th>A3 - JS OUT OF 100</th>
+                    <th>A4 - PHP OUT OF 100</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td><input type="number" max="100" placeholder="100" /></td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td><input type="number" max="100" placeholder="100" /></td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td><input type="number" max="100" placeholder="100" /></td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>100</td>
+                    <td><input type="number" max="100" placeholder="100" /></td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td><input type="number" max="100" placeholder="100" /></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td><input type="number" max="100" placeholder="100" /></td>
+                </tr>
+    </div>
 </body>
 
 </html>

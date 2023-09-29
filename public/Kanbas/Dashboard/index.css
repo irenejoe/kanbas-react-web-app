@@ -1,0 +1,20 @@
+.wd-dashboard-heading {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 2em;
+    font-weight:lighter;
+}
+
+.wd-dashboard-subheading {
+    padding-left: 20px;
+    font-size: 1.8em;
+}
+
+.wd-course-grid {
+    float: left;
+}
+
+.wd-course-grid .col {
+    width: 260px;
+    padding: 15px;
+}
