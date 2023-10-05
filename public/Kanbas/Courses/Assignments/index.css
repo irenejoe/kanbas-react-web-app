@@ -1,0 +1,52 @@
+.wd-bc-course {
+    color:red;
+}
+
+.wd-breadcrumb {
+    padding: 20px;
+    float: left;
+    display: inline-flex;
+    font-size: 1.2em;
+}
+
+.wd-heading-icon {
+    float:left;
+    padding: 30px;
+}
+
+.wd-btn-text {
+    color: black;
+}
+
+.wd-green {
+    color:green;
+}
+.wd-assignments li a {
+    color:black;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.wd-assignment-info {
+    padding: 0px;
+    margin: 0px;
+    color: grey;
+    font-size:0.9em;
+}
+
+.wd-assignment-due {
+    padding: 0px;
+    margin: 0px;
+    color: grey;
+    font-size:0.9em;
+}
+
+.wd-assignment-header {
+    background-color: #d3d3d3;
+}
+
+.wd-assignment-header div {
+    padding: 10px;
+    padding-left: 20px;
+}

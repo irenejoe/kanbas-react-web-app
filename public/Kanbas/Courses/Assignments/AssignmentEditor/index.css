@@ -1,0 +1,17 @@
+.wd-edit-content {
+    float: left;
+    width: 70%
+}
+
+.wd-sub-section {
+    border:1px solid #d3d3d3;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.wd-edit-add {
+    text-align: center;
+    background-color: #d3d3d3;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}

@@ -1,0 +1,28 @@
+.wd-bc-course {
+    color:red;
+}
+
+.wd-breadcrumb {
+    padding: 20px;
+    float: left;
+    display: inline-flex;
+    font-size: 1.2em;
+}
+
+.wd-heading-icon {
+    float:left;
+    padding: 30px;
+}
+
+.wd-grades-content {
+    float: left;
+    width:70%
+}
+
+.wd-btn-text {
+    color: black;
+}
+
+.wd-grade-name {
+    color: red;
+}

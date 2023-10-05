@@ -1,0 +1,52 @@
+.wd-bc-course {
+    color: red;
+}
+
+.wd-breadcrumb {
+    padding: 20px;
+    float: left;
+    display: inline-flex;
+    font-size: 1.2em;
+}
+
+.wd-course-content {
+    float: left;
+}
+
+.wd-heading-icon {
+    float: left;
+    padding: 30px;
+}
+
+.wd-home-content {
+    float: left;
+    display: inline-flex;
+}
+
+.wd-module-links li a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-course-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+.wd-course-links li {
+    background: #d3d3d3
+}
+
+.wd-btn-text {
+    color: black;
+}
+
+.wd-calendar {
+    color: red;
+    text-decoration: none;
+    float: right;
+}
+
+.wd-checkmark {
+    color: green;
+}

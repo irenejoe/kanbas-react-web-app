@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Kanbas</title>
+    <link href="../../../vendors/bootstrap/dist/js/bootstrap.bundle.min.js" rel="stylesheet" />
+    <link href="../../../vendors/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet" />
     <link href="../../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
     <link href="../../KanbasNavigation/index.css" rel="stylesheet" />
@@ -54,6 +56,18 @@
                 <a href="#">Help</a>
             </li>
         </ul>
+    </div>
+    <div class="row">
+        <div class="col">
+            <i class="fa-solid fa-bars wd-heading-icon" style="color: red">
+            </i>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="wd-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item wd-bc-course">CS4550.12631.202410</li>
+                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+            </nav>
+        </div>
     </div>
     <div>
         <ul class="list-group wd-course-navigator">
@@ -110,72 +124,95 @@
             </li>
         </ul>
     </div>
-    <div>
-        <select>
-            <option>Gradebook</option>
-            <option>Option Two</option>
-            <option>Option Three</option>
-        </select>
-        <button>Import</button>
-        <select>
-            <option>Export</option>
-            <option>Option Two</option>
-            <option>Option Three</option>
-        </select>
-        <button>Configure</button>
-        <h3>Student Names</h3>
-        <input type="text" placeholder="Search Students" title="Type the usernames of students you want to filter" />
-        <h3>Assignment Names</h3>
-        <input type="text" placeholder="Search Assignments" />
-        <br>
-        <br>
-        <button>Apply Filters</button>
-        <br />
-        <br />
-        <table width="100%" border="1">
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A0 - INTRO OUT OF 100</th>
-                    <th>A1 - HTML OUT OF 100</th>
-                    <th>A2 - CSS OUT OF 100</th>
-                    <th>A3 - JS OUT OF 100</th>
-                    <th>A4 - PHP OUT OF 100</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td><input type="number" max="100" placeholder="100" /></td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><input type="number" max="100" placeholder="100" /></td>
-                </tr>
-                <tr>
-                    <td>Jane Doe</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><input type="number" max="100" placeholder="100" /></td>
-                </tr>
-                <tr>
-                    <td>John Smith</td>
-                    <td>100</td>
-                    <td><input type="number" max="100" placeholder="100" /></td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><input type="number" max="100" placeholder="100" /></td>
-                </tr>
-                <tr>
-                    <td>Jane Smith</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><input type="number" max="100" placeholder="100" /></td>
-                </tr>
+    <div class="wd-grades-content">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-sm btn-secondary wd-btn-text float-end">
+                    <i class="fa-solid fa-gear"></i></button>
+                <button class="btn btn-sm btn-secondary wd-btn-text float-end"><i
+                        class="fa-solid fa-file-export"></i>Export</button>
+                <button class="btn btn-sm btn-secondary wd-btn-text float-end"><i
+                        class="fa-solid fa-file-import"></i>Import</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5>Student Names</h5>
+            </div>
+            <div class="col">
+                <h5>Assignment Names</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" placeholder="Search Students"
+                    title="Type the usernames of students you want to filter" />
+            </div>
+            <div class="col">
+                <input type="text" placeholder="Search Assignments" />
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col">
+                <button class="btn btn-sm btn-secondary wd-btn-text">
+                    <i class="fa-solid fa-filter"></i> Apply Filters
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>A0 - INTRO OUT OF 100</th>
+                        <th>A1 - HTML OUT OF 100</th>
+                        <th>A2 - CSS OUT OF 100</th>
+                        <th>A3 - JS OUT OF 100</th>
+                        <th>A4 - PHP OUT OF 100</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="wd-grade-name">John Doe</p>
+                        </td>
+                        <td><input type="number" max="100" placeholder="100" /></td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td><input type="number" max="100" placeholder="100" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="wd-grade-name">Jane Doe</p>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td><input type="number" max="100" placeholder="100" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="wd-grade-name">John Smith</p>
+                        </td>
+                        <td>100</td>
+                        <td><input type="number" max="100" placeholder="100" /></td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td><input type="number" max="100" placeholder="100" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="wd-grade-name">Jane Smith</p>
+                        </td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td><input type="number" max="100" placeholder="100" /></td>
+                    </tr>
+        </div>
     </div>
 </body>
 
