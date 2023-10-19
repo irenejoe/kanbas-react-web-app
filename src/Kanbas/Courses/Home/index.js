@@ -1,89 +1,45 @@
 import ModuleList from "../Modules/ModuleList";
-import { BsThreeDotsVertical } from "react-icons/bs"
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { AiOutlinePlus, AiOutlineCheckCircle } from "react-icons/ai";
+import "./index.css"
 
 function Home() {
   return (
     <div className="row">
-        <div className="col-10">
-            <h2>Home</h2>
-            <ModuleList />
+      <div className="col-9">
+        <div className="clearfix">
+          <button className="mx-1 float-end btn btn-secondary"><BsThreeDotsVertical /></button>
+          <button className="mx-1 float-end btn btn-danger"><AiOutlinePlus /> Module</button>
+          <div className="dropdown mx-1">
+            <button className="float-end btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <AiOutlineCheckCircle /> Publish All</button>
+            <ul className="dropdown-menu">
+              <li>Option One</li>
+              <li>Option Two</li>
+            </ul>
+          </div>
+          <button className="mx-1 float-end btn btn-secondary">View Progress</button>
+          <button className="mx-1 float-end btn btn-secondary">Collapse All</button>
         </div>
-        <div className="col-2">
-            <h2>Status</h2>
-        </div>
+        <hr />
+        <ModuleList />
+      </div>
+      <div className="col-2 wd-status">
+        <button className="my-1 btn btn-secondary">Import Existing Content</button>
+        <button className="my-1 btn btn-secondary">Import from Commons</button>
+        <button className="my-1 btn btn-secondary">Choose Home Page</button>
+        <button className="my-1 btn btn-secondary">View Course Stream</button>
+        <button className="my-1 btn btn-secondary">New Announcement</button>
+        <button className="my-1 btn btn-secondary">New Analytics</button>
+        <button className="my-1 btn btn-secondary">View Course Notifications</button>
+        <h2>ToDo</h2>
+        <hr />
+        <ul className="wd-todo list-group">
+          <li className="list-group-item">Grade A1 - ENV + HTML</li>
+          <li className="list-group-item">Grade A2 - CSS + BOOTSTRAP</li>
+        </ul>
+      </div>
     </div>
   );
 }
 export default Home;
-
-// function Home() {
-//   return (
-//     <div className="row">
-//       <div className="col-10">
-//         <button class="mx-1 float-end btn btn-secondary"><BsThreeDotsVertical /></button>
-//         <button class="mx-1 float-end btn btn-danger"> Module</button>
-//         <button class="mx-1 float-end btn btn-secondary dropdown-toggle" type="button">
-//           Publish All</button>
-//         <button class="mx-1 float-end btn btn-secondary">View Progress</button>
-//         <button class="mx-1 float-end btn btn-secondary">Collapse All</button>
-//         <hr />
-//         <ModuleList />
-//       </div>
-//       <div class="col">
-//             <button class="btn btn-secondary">Import Existing Content</button>
-//             <button class="btn btn-secondary">Import from Commons</button>
-//             <button class="btn btn-secondary">Choose Home Page</button>
-//             <button class="btn btn-secondary">View Course Stream</button>
-//             <button class="btn btn-secondary">New Announcement</button>
-//             <button class="btn btn-secondary">New Analytics</button>
-//             <button class="btn btn-secondary">View Course Notifications</button>
-//           </div>
-      
-//       <div className="col-2">Status</div>
-//       <div class="col-12 col-xl-9 col-xxl-6">
-//         <div class="clearfix">
-//           <button class="mx-1 float-end btn btn-secondary"><BsThreeDotsVertical /></button>
-//           <button class="mx-1 float-end btn btn-danger"> Module</button>
-//           <div class="dropdown mx-1">
-//             <button class="float-end btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-//               Publish All
-//             </button>
-//             <ul class="dropdown-menu">
-
-//             </ul>
-//           </div>
-
-//         </div>
-//         <hr />
-//         <ModuleList />
-//       </div>
-//       <div class="d-none d-xxl-block col-xxl-3">
-//         <div class="float-end">
-//           <p>Course Status</p>
-//           <button class="mx-2 btn btn-secondary">Unpublish</button>
-//           <button class="mx-0 btn btn-success" disabled>Published</button>
-//           <div class="col">
-//             <button class="btn btn-secondary">Import Existing Content</button>
-//             <button class="btn btn-secondary">Import from Commons</button>
-//             <button class="btn btn-secondary">Choose Home Page</button>
-//             <button class="btn btn-secondary">View Course Stream</button>
-//             <button class="btn btn-secondary">New Announcement</button>
-//             <button class="btn btn-secondary">New Analytics</button>
-//             <button class="btn btn-secondary">View Course Notifications</button>
-//           </div>
-//           <h6>To Do</h6>
-//           <hr />
-//           <span className='anchor'>Assignment 1</span>
-//           <br />
-//           <br />
-//           <h6>Coming Up</h6>
-//           <hr />
-//           <span className='anchor'>Lecture</span>
-//         </div>
-//       </div>
-//     </div>
-
-//   );
-// }
-
-// export default Home;

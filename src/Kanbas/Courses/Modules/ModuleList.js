@@ -6,12 +6,12 @@ function ModuleList() {
   const modules = db.modules.filter((module) => module.course === courseId);
   return (
     <div>
-      <ul className="list-group">
+      <ul className="list-group wd-modules">
         {modules.map((module, index) => (
           <li key={index} className="list-group-item">
-            {module.name}
+            <span className="wd-module-title list-group-item list-group-item-secondary">{module.name}</span>
             {module.lessons && module.lessons.length > 0 && (
-              <ul className="list-group">
+              <ul className="list-group wd-modules">
                 {module.lessons.map((lesson, index) => (
                   <li key={index} className="list-group-item">
                     {lesson.name}

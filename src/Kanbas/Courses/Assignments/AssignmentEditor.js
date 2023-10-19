@@ -2,6 +2,9 @@ import React from "react";
 import db from "../../Database";
 import { Link } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { AiFillCheckCircle } from "react-icons/ai";
+
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
   const assignment = db.assignments.find((a) => a._id === assignmentId);
@@ -13,18 +16,19 @@ function AssignmentEditor() {
   };
   return (
     <div>
-      <h1>Assignment Editor!!! {assignment.title}</h1>
-      <input className="form-control" defaultValue={assignment.title} />
-      <button onClick={handleSave} className="btn btn-success">
+      <button className="mx-1 float-end btn btn-secondary"><BsThreeDotsVertical /></button>
+      <span className="m-2 text-success float-end"><AiFillCheckCircle /> Published</span>
+      <label for="assignmentName">Assignment Name</label>
+      <input className="form-control" id="assignmentName" defaultValue={assignment.title} />
+      <button onClick={handleSave} className="m-2 btn btn-success float-end">
         Save
       </button>
       <Link
-        className="btn btn-warning"
+        className="m-2 btn btn-secondary float-end"
         to={`/Kanbas/Courses/${courseId}/Assignments`}
       >
         Cancel
       </Link>
-      <button className="btn btn-danger">Delete</button>
     </div>
   );
 }

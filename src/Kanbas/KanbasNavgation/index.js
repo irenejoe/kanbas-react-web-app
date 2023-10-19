@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-free";
 import { BiUserCircle } from "react-icons/bi";
 import { RiDashboard3Fill } from "react-icons/ri";
 import { FaBook, FaEnvelopeOpenText, FaClock, FaDesktop, FaQuestionCircle } from "react-icons/fa";
-import { BsFillCalendar2WeekFill, BsBoxArrowRight} from "react-icons/bs";
+import { BsFillCalendar2WeekFill, BsBoxArrowRight } from "react-icons/bs";
 
 function KanbasNavigation() {
     const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];

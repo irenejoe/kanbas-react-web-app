@@ -17,25 +17,21 @@ function Courses() {
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
-      <div class="row p-2">
-        <div class="col-1">
+      <div className="row p-2">
+        <div className="col-1">
           <AiOutlineBars className="wd-icon" />
         </div>
-        <div class="col-1">
-        </div>
-        <div class="col">
-          <nav class="wd-breadcrumb" style={{ "--bs-breadcrumb-divider": '>' }}>
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><span className='anchor' href="#">{course.number} FA23 02</span></li>
-              <li class="breadcrumb-item">&gt; {page}</li>
+        <div className="col">
+          <nav className="wd-breadcrumb" style={{ "--bs-breadcrumb-divider": '>' }}>
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item">{course.number} FA23 02</li>
+              <li className="breadcrumb-item">&gt; {page}</li>
             </ol>
           </nav>
         </div>
       </div>
       <div className="row">
-        <div className="col-4">
-          <CourseNavigation />
-        </div>
+        <CourseNavigation />
         <div className="col">
           <Routes>
             <Route path="/" element={<Home />} />
