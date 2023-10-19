@@ -1,0 +1,15 @@
+.wd-icon {
+    color: red;
+    display: inline;
+    font-size: 2em;
+    padding: 2px;
+}
+
+.wd-breadcrumb {
+    color: red;
+    font-size: 1.2em;
+}
+
+.wd-course-content {
+    display: inline;
+}

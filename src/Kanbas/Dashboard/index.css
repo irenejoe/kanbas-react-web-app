@@ -1,0 +1,31 @@
+.wd-dash-card a {
+    text-decoration: none;
+    color: #209ef7;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.wd-course-grid {
+    padding: 10px;
+    float: left;
+}
+
+.wd-course-grid .col {
+    width: 270px;
+    padding: 15px;
+}
+
+.wd-card-subtitle {
+    font-size: 1.2em;
+    color: grey;
+}
+
+.wd-card-text {
+    font-size: 0.8em;
+    font-weight: lighter;
+    color: grey;
+}
+
+.wd-card-icon {
+    color: grey;
+}
