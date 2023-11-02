@@ -35,8 +35,8 @@ function Home() {
         <h2>ToDo</h2>
         <hr />
         <ul className="wd-todo list-group">
-          <li className="list-group-item">Grade A1 - ENV + HTML</li>
-          <li className="list-group-item">Grade A2 - CSS + BOOTSTRAP</li>
+          <li className="list-group-item text-danger">Grade A1 - ENV + HTML</li>
+          <li className="list-group-item text-danger">Grade A2 - CSS + BOOTSTRAP</li>
         </ul>
       </div>
     </div>

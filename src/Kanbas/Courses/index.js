@@ -1,7 +1,6 @@
 import { useParams, useLocation } from "react-router";
 import CourseNavigation from "./CourseNavigation";
-import db from "../Database";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
@@ -9,12 +8,12 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import "./index.css"
 import { AiOutlineBars } from "react-icons/ai"
 
-function Courses() {
+function Courses({courses}) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   let pathList = pathname.split('/')
   let page = pathList[pathList.length - 1]
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="row p-2">
@@ -34,7 +33,7 @@ function Courses() {
         <CourseNavigation />
         <div className="col">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home />} />
             <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<Assignments />} />
