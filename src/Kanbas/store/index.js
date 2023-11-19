@@ -3,9 +3,9 @@ import modulesReducer from "../Courses/Modules/modulesReducer";
 
 
 const store = configureStore({
-  reducer: {
-    modulesReducer
-  }
+    reducer: {
+        modulesReducer
+    }
 });
 
 

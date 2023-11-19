@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { useParams, useLocation } from "react-router";
 import CourseNavigation from "./CourseNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
@@ -8,12 +10,27 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import "./index.css"
 import { AiOutlineBars } from "react-icons/ai"
 
-function Courses({courses}) {
+function Courses() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
+  const URL = "http://localhost:4000/api/courses";
+
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
   let pathList = pathname.split('/')
   let page = pathList[pathList.length - 1]
-  const course = courses.find((course) => course._id === courseId);
+  
   return (
     <div>
       <div className="row p-2">
