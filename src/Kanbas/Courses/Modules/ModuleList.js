@@ -31,17 +31,18 @@ function ModuleList() {
     });
   };
 
-  const handleAddModule = () => {
-    createModule(courseId, module).then((module) => {
-      dispatch(addModule(module));
-    });
+  const handleAddModule = async (module) => {
+    const newModule = await client.createModule(courseId, module);
+    dispatch(addModule(newModule));
+    dispatch(setModule({ name: "", description: "" }));
   };
 
-  const handleUpdateModule = async () => {
-    const status = await client.updateModule(module);
+
+  const handleUpdateModule = async (module) => {
+    await client.updateModule(module);
     dispatch(updateModule(module));
+    dispatch(setModule({ name: "", description: "" }));
   };
-
 
 
   // const [modules, setModules] = useState(db.modules);
@@ -89,10 +90,10 @@ function ModuleList() {
               dispatch(setModule({ ...module, description: e.target.value }))
             } />
           <button className="btn btn-success mx-1"
-            onClick={() => handleAddModule}>
+            onClick={() => handleAddModule(module)}>
             Add</button>
           <button className="btn btn-primary mx-1"
-            onClick={() => dispatch(handleUpdateModule(module))}>Update</button>
+            onClick={() => handleUpdateModule(module)}>Update</button>
         </li>
 
         {modules.filter((module) => module.course === courseId).map((module, index) => (

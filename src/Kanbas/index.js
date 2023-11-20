@@ -70,9 +70,11 @@ function Kanbas() {
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
-          return response.data;
+          return course;
         }
-        return c;
+        else {
+          return c;
+        }
       })
     );
     setCourse({ name: "" });

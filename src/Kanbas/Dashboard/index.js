@@ -57,7 +57,10 @@ function Dashboard({
         <button className="btn btn-success mx-2" onClick={addNewCourse} >
           Add
         </button>
-        <button className="btn btn-primary mx-2" onClick={updateCourse} >
+        <button className="btn btn-primary mx-2" onClick={
+          (event) => {
+            event.preventDefault();
+            updateCourse(course);}} >
           Update
         </button>
         <hr />

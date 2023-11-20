@@ -9,22 +9,21 @@ export const deleteModule = async (moduleId) => {
 };
 
 export const findModulesForCourse = async (courseId) => {
-    const response = await axios
-        .get(`${COURSES_URL}/${courseId}/modules`);
-    return response.data;
+  const response = await axios
+    .get(`${COURSES_URL}/${courseId}/modules`);
+  return response.data;
 };
 
 export const createModule = async (courseId, module) => {
-    const response = await axios.post(
-      `${COURSES_URL}/${courseId}/modules`,
-      module
-    );
-    return response.data;
-  };
+  const response = await axios.post(
+    `${COURSES_URL}/${courseId}/modules`,
+    module
+  );
+  return response.data;
+};
 
-  export const updateModule = async (module) => {
-    const response = await axios.put(`${MODULES_URL}/${module._id}`, module);
-    return response.data;
-  };
-  
-  
+export const updateModule = async (module) => {
+  const response = await axios.put(`${MODULES_URL}/${module._id}`, module);
+  return response.data;
+};
+
