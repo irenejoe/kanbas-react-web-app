@@ -13,7 +13,8 @@ import { AiOutlineBars } from "react-icons/ai"
 function Courses() {
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
 
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
@@ -30,7 +31,7 @@ function Courses() {
 
   let pathList = pathname.split('/')
   let page = pathList[pathList.length - 1]
-  
+
   return (
     <div>
       <div className="row p-2">
