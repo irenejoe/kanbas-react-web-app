@@ -3,6 +3,7 @@ import Labs from "./Labs";
 import HelloWorld from "./Labs/a3/HelloWorld";
 import "./App.css";
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import Users from "./users/index";
 
 function App() {
   const screen = "labs";
@@ -11,6 +12,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/*" element={<Labs />} />
+          <Route path="/Users/*" element={<Users />} />
           <Route path="/Labs/*" element={<Labs />} />
           <Route path="/Kanbas/*" element={<Kanbas />} />
           <Route path="/hello" element={<HelloWorld />} />
