@@ -27,32 +27,32 @@ function Account() {
             <h1>Account</h1>
             {account && (
                 <div>
-                    <input value={account.password}
+                    <input className="form-control my-1" value={account.password}
                         onChange={(e) => setAccount({
                             ...account,
                             password: e.target.value
                         })} />
-                    <input value={account.firstName}
+                    <input className="form-control my-1" value={account.firstName}
                         onChange={(e) => setAccount({
                             ...account,
                             firstName: e.target.value
                         })} />
-                    <input value={account.lastName}
+                    <input className="form-control my-1" value={account.lastName}
                         onChange={(e) => setAccount({
                             ...account,
                             lastName: e.target.value
                         })} />
-                    <input value={account.dob}
+                    <input className="form-control my-1" value={account.dob}
                         onChange={(e) => setAccount({
                             ...account,
                             dob: e.target.value
                         })} />
-                    <input value={account.email}
+                    <input className="form-control my-1" value={account.email}
                         onChange={(e) => setAccount({
                             ...account,
                             email: e.target.value
                         })} />
-                    <select onChange={(e) => setAccount({
+                    <select className="form-control my-1" onChange={(e) => setAccount({
                         ...account,
                         role: e.target.value
                     })}>
@@ -61,13 +61,13 @@ function Account() {
                         <option value="FACULTY">Faculty</option>
                         <option value="STUDENT">Student</option>
                     </select>
-                    <button onClick={save}>
+                    <button onClick={save} className="btn btn-success w-100 my-1">
                         Save
                     </button>
-                    <Link to="/Users/admin/users" className="btn btn-warning w-100">
+                    <Link to="/Users/admin/users" className="btn btn-warning w-100 my-1">
                         Users
                     </Link>
-                    <button onClick={signout}>
+                    <button onClick={signout} className="btn btn-danger w-100 my-1">
                         Signout
                     </button>
                 </div>
