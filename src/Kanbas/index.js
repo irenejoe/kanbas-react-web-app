@@ -103,6 +103,7 @@ function Kanbas() {
             <Route path="Courses/*" element={<Navigate to="RS101" />} />
             <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
             <Route path="Calendar" element={<h1>Calendar</h1>} />
+            <Route path="Account" element={<h1>Account</h1>} />
           </Routes>
         </div>
       </div>
